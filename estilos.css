@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+    background-color: #000FA9;
+    color: white;
+    grid-template-rows: 100px 1f 1f 200px;
+    grid-template-columns: 200px 1 fr 20%;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.menu {
+    list-style: none;
+    margin: 0.7rem;
+    background-color: #4654f3;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    margin: 0.7rem;
+    background-color: blue;
+    padding: 0.7rem;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li:hover {
+    background-color: rgb(62, 14, 107);
+}
+
+.menu li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+li,
+a {
+    color: rgb(255, 255, 255);
+}
+
+.tabla {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to top, blue,rgb(141, 141, 226),rgb(217, 217, 240));
+}
+
+label {
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
+
+.encabezado {
+    color: blueviolet;
+    font-family: 'Koulen', cursive;
+    background-color: blue;
+    background-image: url("./15.jpg");
+    text-align: center;
+}
+
+.encabezado2 {
+    font-family: 'Koulen', cursive;
+    background-color: blue;
+}
+
+.contenedor {
+    width: 450px;
+    height: 400px;
+    font-family: 'Macondo', cursive;
+    overflow: scroll;
+    text-align: center;
+    background-image: linear-gradient(to top, blue,rgb(141, 141, 226),rgb(217, 217, 240));
+
+}
+
+.contenedor1 {
+    width: 450px;
+    height: 400px;
+    font-family: 'Macondo', cursive;
+    overflow: scroll;
+    text-align: center;
+    background-color: #4654f3;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to top, blue,rgb(141, 141, 226),rgb(217, 217, 240));
+}
+
+.terminos {
+    color: white;
+    font-family: 'Koulen', cursive;
+}
+
+input {
+    background-color: blue;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    border-color: #4654f3 5px;
+}
+
+.desea {
+    color: #000FA9;
+}
+
+.lista {
+    list-style: square;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    padding-left: 550px;
+    margin-bottom: 50px;
+}
+
+.formulario {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: linear-gradient(180deg, #000FA9 0%, #fff 100%);
+    text-align: center;
+}
+
+.hr {
+    height: 5px;
+    background-color: white;
+}
+
+.auto {
+    list-style: none;
+    margin: 0.7rem;
+    background-color: #4654f3;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.auto li {
+    display: inline-block;
+    text-align: center;
+    margin: 0.7rem;
+    background-color: blue;
+    padding: 0.7rem;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.auto li a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.auto li:hover {
+    background-color: rgb(62, 14, 107);
+   
+}
+
+.auto li a:hover {
+    color: rgb(255, 255, 255);
+    
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    opacity: .4;
+    border: 2px double gray;
+   
+}
+
+.destacados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+img:hover {
+    opacity: 1;
+    border: solid white 2px;
+    transform: scale(1.1,1.1);
+}
+
+.h1 {
+    text-align: center;
+    color: rgb(240, 255, 241);
+    background-color: #4654f3;
+    width: 450px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, blue,rgb(141, 141, 226),rgb(217, 217, 240));
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+.arriba {
+    background-color: rgb(65, 65, 230);
+}
+
+footer {
+    background-color: #4654f3;
+    text-align: center;
+    text-decoration: dotted;
+    border-radius: 15px;
+}
+
+.headerContacto {
+    background-color: #4654f3;
+    border-radius: 20px;
+}
+
+.publica {
+    background-color: white;
+    color: #000FA9;
+    border-radius: 20px;
+    border-color: #4654f3 5px;
+}
+
+.boton {
+    background-color: #000FA9;
+    color: white;
+    border-radius: 20px;
+}
+.fiel{
+    background-image: linear-gradient(to top, blue,rgb(141, 141, 226),rgb(217, 217, 240));
+}
+.clasico{
+    background-image: linear-gradient(to top, blue,rgb(141, 141, 226),rgb(217, 217, 240));
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "nav main main"
+            "footer footer footer";
+        grid-template-rows: 100px 120px 1f 200px;
+    }
+
+    .menu {
+        display: list-item;
+        width: 25rem;
+        height: 90%;
+        text-align: center;
+        background-color: blueviolet;
+    }
+
+    .auto {
+        display: none;
+        width: 25rem;
+        height: 90%;
+        text-align: center;
+        background-color: blueviolet;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "footer footer footer";
+        background-color: blueviolet;
+        color: white;
+        grid-template-rows: 100px 120px 1f 120px;
+    }
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        color: blue;
+    }
+    50%{
+        opacity:0.5 ;
+        color: #7f85ca;
+    }
+    100%{
+        opacity: 1;
+        color: white;
+    }
+}

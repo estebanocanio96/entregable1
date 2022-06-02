@@ -5,23 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="./android-chrome-512x512.png">
     <title>Home</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <header>
         <h1 class="h1">Nuestra coleccion</h1> <!-- modo ilustracion -->
-        <nav>
-            <ul class="auto">
-                <li><a href="#">Autos</a></li>
-                <li><a href="#">Expo</a></li>
-                <li><a href="#">Juntadas</a></li>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="#">Direccion</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Autos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Expo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Juntadas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Fotos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
     </header>
     <main>
         <hr>
@@ -35,12 +50,12 @@
             </p>
             <button class="boton">Leer mas</button>
         </div>
-    
+
         <hr>
         <div class="contenedor1">
             <img src="./5.jpg" width="400px" alt="">
             <h3>VOLKSWAGEN GACEL</h3>
-            <p>Todos los autos que hoy nos despiertan admiración por su estado y por su valor histórico o sentimental
+            <p class="lead">Todos los autos que hoy nos despiertan admiración por su estado y por su valor histórico o sentimental
                 han debido sortear dos pruebas: la del mercado, en su momento, y la del tiempo (quizás la más difícil).
                 El Volkswagen Gacel y su sucesor Senda son unos de esos casos. No fueron quizás un rotundo éxito de
                 ventas. Sus logros en el ámbito deportivo fueron buenos, aunque no rutilantes. Sin embargo su carácter,
@@ -50,9 +65,9 @@
         </div>
         <hr>
         <div class="contenedor1">
-            <img src="./6.jpg" width="400px"  class="animate__animated animate__rotateInUpRight" alt="">
+            <img src="./6.jpg" width="400px" class="animate__animated animate__rotateInUpRight" alt="">
             <h3>COUPÉ CHEVY 1969 A 1878</h3>
-            <p>1968. La General Motors, en Estados Unidos, presenta el Chevy II «Nova», un diseño de Jhon DeLorean uno
+            <p class="lead">1968. La General Motors, en Estados Unidos, presenta el Chevy II «Nova», un diseño de Jhon DeLorean uno
                 de los diseñadores más reconocidos y responsable de varios «muscle cars».
                 Como dato anecdótico: DeLorean, ya independizado de la GM, fue quien diseño el auto de la famosa zaga.
                 «Volver al Futuro».</p>
@@ -62,25 +77,34 @@
         <div class="contenedor1">
             <img src="./7.jpg" width="400px" alt="">
             <h3>FIAT 128</h3>
-            <p>Fiat Concord de Argentina presenta uno de los autos más presentes en la historia automovilistica de este
+            <p class="lead">Fiat Concord de Argentina presenta uno de los autos más presentes en la historia automovilistica de este
                 país, el 128.</p>
             <button class="boton">Leer mas</button>
             <hr>
             <img src="./8.jpg" width="400px" alt="">
             <h3>FIAT 600</h3>
-            <P>En abril de 1960 Fiat Someca S.A. comenzó el ensamble de los 600 bajo el Regimen de Promoción Industrial
+            <P class="lead">En abril de 1960 Fiat Someca S.A. comenzó el ensamble de los 600 bajo el Regimen de Promoción Industrial
                 del gobierno de Arturo Frondizi, nuevamente recordamos que casi todas las marcas que bien conocemos, en
                 la Argentina, tienen aproximadamente la misma fecha de comienzo.</P>
             <button class="boton">Leer mas</BUtton>
         </div>
-        <button class="boton">Seguir viendo...</button>
+        <button type="button" class="btn btn-primary btn-lg">Seguir viendo</button>
         <hr>
-         
-        <br>  
+
+        <br>
     </main>
-    <footer class="animate__animated animate__rotateInUpRight">
-        <h1>Copyright © 2015 FierrosClasicos.com All Rights Reserved</h1>
-    </footer>
+    
+    <footer class="wow animate__animated animate__rotateInUpRight">
+      <h1>Copyright © 2015 FierrosClasicos.com All Rights Reserved</h1>
+  </footer>
+  <script src="./js/wow.min.js"></script>
+  <script>
+      new WOW().init();
+  </script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

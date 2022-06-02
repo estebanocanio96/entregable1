@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="./android-chrome-512x512.png">
     <title>Clasicos</title>
-    <link rel="stylesheet" href="estilos.css">
+
 </head>
 
 <body>
@@ -17,32 +19,35 @@
     </header>
     <nav>
         <ul class="menu">
-            <li><a href="Home.html">NUESTRA COLECCION</a> <br></li>
-            <li><a href="./contacto.html">CONTACTO</a> <br></li>
-            <li><a href="./destacados.html">DESTACADOS</a></li>
+            <li><a href="Home.html" target="_blank">NUESTRA COLECCION</a> <br></li>
+            <li><a href="./contacto.html" target="_blank">CONTACTO</a> <br></li>
+            <li><a href="./destacados.html" target="_blank">DESTACADOS</a></li>
         </ul>
     </nav>
     <hr class="hr">
     <main>
-        <section class="contenedor">
+        <section class="col-4 contenedor p-3 ">
             <img src="./1.jpg" width="400px" class="animate__animated animate__rotateInUpRight" alt="">
-            <p>El Torino fue desarrollado por IKA como un automóvil íntegramente argentino, combinando la carrocería
+            <p class="lead">El Torino fue desarrollado por IKA como un automóvil íntegramente argentino, combinando la
+                carrocería
                 1964-1965 del Rambler American y el Classic, con diseños exclusivos de paneles delanteros, traseros y el
                 interior rediseñados por Pininfarina.</p>
         </section>
         <hr class="hr">
-        <section class="contenedor">
+        <section  class="col-4 contenedor p-3 ">
             <img src="./2.jfif" width="400px" alt="">
-            <p>El Renault 12 (R12) fue un automóvil de turismo del segmento C producido por el fabricante francés
+            <p class="lead">El Renault 12 (R12) fue un automóvil de turismo del segmento C producido por el fabricante
+                francés
                 Renault entre los años 1969 y 1996. Fue diseñado para cubrir el hueco entre el Renault 6 (presentado un
                 año antes) y el Renault 16. El R12 fue reemplazado en Europa por el Renault 9 en 1983. Siguió en
                 producción fuera de Europa hasta 1996 en Argentina con varias modificaciones sobre el modelo original.
                 En 1991 se concedió a Dacia autorización para fabricarlo hasta 1996.</p>
         </section>
         <hr class="hr">
-        <section class="contenedor">
+        <section  class="col-4 contenedor p-3 ">
             <img src="./3.jpg" width="400px" alt="">
-            <p>El Peugeot 504 fue lanzado en Francia en septiembre de 1968 y apenas 11 meses más tarde llegaba a nuestro
+            <p class="lead">El Peugeot 504 fue lanzado en Francia en septiembre de 1968 y apenas 11 meses más tarde
+                llegaba a nuestro
                 país, todo un record para aquellos tiempos. Recién hace un par de años que nos acostumbramos a que los
                 modelos lanzados en Europa lleguen aquí al poco tiempo, pero hay que imaginarse el acontecimiento que
                 significaba para la época un hecho de semejante naturaleza</p>
@@ -52,35 +57,43 @@
             <h2>
                 Autos Disponibles
             </h2>
-            <table class="tabla" border="1" cellpadding="10px" cellspacing="5px">
-                <tr>
-                    <td>Marca</td>
-                    <td>Color</td>
-                    <td>Modelo</td>
-                </tr>
-                <tr>
-                    <td>Torino</td>
-                    <td>rojo</td>
-                    <td>1965</td>
-                </tr>
-                <tr>
-                    <td>Renault</td>
-                    <td>gris</td>
-                    <td>1996</td>
-                </tr>
-                <tr>
-                    <td>Peugeot</td>
-                    <td>Blanco</td>
-                    <td>1968</td>
-                </tr>
+            <table class="table  table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col" Marca></th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Modelo</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Torino</td>
+                        <td>Rojo</td>
+                        <td>1965</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Renault</td>
+                        <td>Gris</td>
+                        <td>1996</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Peugeot</td>
+                        <td>1968</td>
+                    </tr>
+                </tbody>
             </table>
+
         </section>
         <section>
             <h2>
                 Formulario de Contacto
             </h2>
             <fieldset class="fiel">
-                <form action="">
+                <form action="" class="formulario">
                     <div>
                         <label for="nombre">Completar nombre:</label>
                         <input type="text" name="nombre" placeholder="juan">
@@ -107,16 +120,22 @@
                             <br>
                             <input type="radio" name="sexo" value="SI"> SI
                             <input type="radio" name="sexo" value="NO"> NO
+
                         </div> <br>
                         <div>
                             Acepta terminos y condiciones
                             <input type="checkbox" name="acepta" value="2">
                         </div> <br>
-                        <div>
-                            <input type="submit" value="enviar datos">
-                            <input type="submit" value="borrar datos">
-                        </div> <br>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                checked>
+                            <label class="btn btn-outline-primary" for="btnradio1">Enviar Datos</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio2">Borrar Datos</label>
+                        </div>
                 </form>
+                <br>
             </fieldset>
             <br>
         </section>
@@ -128,6 +147,10 @@
     <script>
         new WOW().init();
     </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
 

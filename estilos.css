@@ -294,13 +294,13 @@ footer {
         grid-template-rows: 100px 120px 1f 200px;
     }
 
-    .menu {
+     .menu {
         display: list-item;
         width: 25rem;
         height: 90%;
         text-align: center;
         background-color: blueviolet;
-    }
+    } 
 
     .auto {
         display: none;
@@ -322,6 +322,10 @@ footer {
         background-color: blueviolet;
         color: white;
         grid-template-rows: 100px 120px 1f 120px;
+    }
+    .menu a {
+        float:none;
+        width: 100%;
     }
 }
 @keyframes aparecer{
